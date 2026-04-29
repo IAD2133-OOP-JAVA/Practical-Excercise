@@ -7,13 +7,13 @@ public class RecordList extends JPanel implements ActionListener, KeyListener {
 
     Timer timer;
     int playerX = 200;
-    int object X, object Y;
+    int object X, obejct Y;
     int score = 0;
     int misses = 0;
 
     Random rand = new Random();
 
-    public SimpleTest() {
+    public SimpleTest {
         setPreferredSize(new Dimension(500, 500));
         setBackground(Color.BLACK);
 
