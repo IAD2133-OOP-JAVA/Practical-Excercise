@@ -1,6 +1,3 @@
-import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
 import java.util.Random;
 
 public class RecordList extends JPanel implements ActionListener, KeyListener {
@@ -31,7 +28,7 @@ public class RecordList extends JPanel implements ActionListener, KeyListener {
         objectY = 0;
     }
 
-    @Override
+    Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
