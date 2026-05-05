@@ -1,16 +1,19 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 import java.util.Random;
 
 public class RecordList extends JPanel implements ActionListener, KeyListener {
 
     Timer timer;
     int playerX = 200;
-    int object X, object Y;
+    int objectX, objectY;
     int score = 0;
     int misses = 0;
 
     Random rand = new Random();
 
-    public SimpleTest() {
+    public RecordList() {
         setPreferredSize(new Dimension(500, 500));
         setBackground(Color.BLACK);
 
@@ -28,7 +31,7 @@ public class RecordList extends JPanel implements ActionListener, KeyListener {
         objectY = 0;
     }
 
-    Override
+    @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
@@ -89,7 +92,7 @@ public class RecordList extends JPanel implements ActionListener, KeyListener {
 
     public static void main(String[] args) {
         JFrame frame = new JFrame("Get COIN");
-        SimpleTest game = new SimpleTest();
+        RecordList game = new RecordList();
 
         frame.add(game);
         frame.pack();
