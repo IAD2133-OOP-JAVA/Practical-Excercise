@@ -1,3 +1,5 @@
+package Irfan.EX_1;
+
 public class Vehicle {
     String brand;
     int speed;

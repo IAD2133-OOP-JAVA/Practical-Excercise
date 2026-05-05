@@ -1,3 +1,5 @@
+package Irfan.PRAC_LAB_3;
+
 public class Phone {
     String model;
     double price;
